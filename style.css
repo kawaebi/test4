@@ -1,0 +1,508 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+font: 14px/1.6 "Hiragino Kaku Gothic Pro",Osaka,"メイリオ","ＭＳ Ｐゴシック","MS PGothic",Verdana,Arial,sans-serif;
+margin:0;
+color:#313131;
+}
+li {
+  list-style-type: none;
+}
+img{
+outline:none;
+border-style:none;
+width: 80px;
+height: 80px;
+}
+.wrap {
+  width: 1000px;
+  padding: 40px;
+  margin: 60px auto 0;
+  background: #E9E9E9;
+}
+h1 {
+  border-left: 3px solid #313131;
+  padding-left: 20px;
+  font-size: 22px;
+}
+.flex_area0 {
+  margin-top: 80px;
+}
+.flex_area0  ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* ここから記述してください */
+
+.margin-left li{
+  margin-left: 5px;
+}
+
+.top{
+  margin-bottom: 60px;
+}
+
+
+/* display: flex; */
+.flex_area1 ul{
+  display: flex;
+}
+
+
+
+/* row-reverse */
+.flex_area2 ul{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
+
+/* column */
+.flex_area3 ul{
+  display: flex;
+  flex-direction: column;
+}
+
+
+/*column-revers4*/
+.flex_area4 ul{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+
+/* flex-wrap */
+.flex_area5 ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/* wrap-reverse=左下を起点にして折返し */
+.flex_area6 ul{
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+/* justify-content=水平移動 */
+.flex_area7 ul{
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* flex-end */
+.flex_area8 ul{
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* center=中央揃え */
+.flex_area9 ul{
+  display: flex;
+  justify-content: center;
+}
+
+/* space-between=均等に配置 */
+.flex_area10 ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* space-around=余白を持って均等に配置 */
+.flex_area11 ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+/* align-items＝垂直移動　stretch（初期値＝上に合わせる） */
+.flex_area12 ul{
+  display: flex;
+  align-items: stretch;
+}
+
+.flex_area12 li{
+width: 30%;
+  text-align: center;
+  font-size: 20px;
+  background-color: aqua;
+}
+
+/* flex-start=高さはそれぞれの要素に合わせて表示 */
+.flex_area13 ul{
+  display: flex;
+  align-items: flex-start;
+}
+
+.flex_area13 li{
+  width: 30%;
+    text-align: center;
+    font-size: 20px;
+    background-color: aqua;
+  }
+
+  /* flex-end=下方向から指示 */
+  .flex_area14 ul{
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .flex_area14 li{
+    width: 30%;
+      text-align: center;
+      font-size: 20px;
+      background-color: aqua;
+    }
+
+
+    /* center=真ん中から指示 */
+    .flex_area15 ul{
+      display: flex;
+      align-items: center;
+    }
+
+    .flex_area15 li{
+      width: 30%;
+        text-align: center;
+        font-size: 20px;
+        background-color: aqua;
+      }
+
+      /* baseline=文字列を揃える */
+      .flex_area16 ul{
+          display: flex;
+          align-items: baseline;
+      }
+
+.flex_area16 li{
+      width: 30%;
+        text-align: center;
+        font-size: 20px;
+        background-color: aqua;
+      }
+
+      /* （flex-wrap） align-content＝＝個要素に高さがない場合に親要素に合わせて高さを調整する */
+      
+      .flexitem{
+        width: 33%;
+        text-align: center;
+        
+
+      }
+
+      .flexcontainer{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: stretch;
+        height: 700px;
+        background-color: black;
+      }
+       
+      .item1{
+        background: #009933;
+      }
+       
+      .item2{
+        background: #0066FF;
+      }
+       
+      .item3{
+        background: #CC6666;
+      }
+       
+      .item4{
+        background: #CC66FF;
+      }
+       
+      .item5{
+        background: #FF33CC;
+      }
+
+      
+      /* （flex-wrap） flex-start＝上位置に要素をあわせ、下方向へ要素を並べる */
+
+
+      .flexitem2{
+        width: 33%;
+        text-align: center;
+        height: 100px;
+      }
+
+      .flexcontainer2{
+          display: flex;
+          flex-wrap: wrap;
+          align-content: flex-start;
+          height: 500px;
+        background-color: black;
+      }
+
+      /* lex-end＝下から要素を配置 */
+      
+      .flexitem3{
+        width: 33%;
+        text-align: center;
+        height: 100px;
+      }
+
+      .flexcontainer3{
+          display: flex;
+          flex-wrap: wrap;
+          align-content: flex-end;
+          height: 500px;
+        background-color: black;
+      }
+
+
+      /* flex-center＝中央から要素を配置  */
+
+      .flexitem4{
+        width: 33%;
+        text-align: center;
+        height: 100px;
+      }
+
+      .flexcontainer4{
+          display: flex;
+          flex-wrap: wrap;
+          align-content: center;
+          height: 500px;
+        background-color: black;
+      }
+
+      /* space-between=縦方向で要素を均等に配置 */
+
+      .flexitem5{
+        width: 33%;
+        text-align: center;
+        height: 100px;
+      }
+
+      .flexcontainer5{
+          display: flex;
+          flex-wrap: wrap;
+          align-content: space-between;
+          height: 500px;
+        background-color: black;
+      }
+
+      /* space-around=上下両端の要素には余白も含めて均等に配置 */
+
+      .flexitem6{
+        width: 33%;
+        text-align: center;
+        height: 100px;
+      }
+
+      .flexcontainer6{
+          display: flex;
+          flex-wrap: wrap;
+          align-content: space-around;
+          height: 500px;
+        background-color: black;
+        margin-bottom: 200px;
+      }
+
+
+
+      /* space-around=上下両端の要素には余白も含めて均等に配置 */
+      .flexcontainer7{
+        display: flex;
+        margin-bottom: 60px;
+      }
+       
+      .flexitem7{
+        width: 30%;
+        height: 100px;
+        text-align: center;
+        font-size: 30px;
+        color: #fff;
+      }
+
+      /* ここからアイテムに指示　order: 番号; */
+
+      .item7-1{
+        background: #009933;
+        order: 4;
+      }
+       
+      .item7-2{
+        background: #0066FF;
+        order: 3;
+      }
+       
+      .item7-3{
+        background: #CC6666;
+        order: 5;
+      }
+       
+      .item7-4{
+        background: #CC66FF;
+        order: 1;
+      }
+       
+      .item7-5{
+        background: #FF33CC;
+        order: 2;
+      }
+
+
+      /* flex-grow=親要素に対しての個要素の割合 */
+      .flexcontainer8{
+        display: flex;
+        margin-bottom: 60px;
+   
+      }
+       
+      .flexitem8{
+        width: 10%;
+        height: 100px;
+        text-align: center;
+        font-size: 30px;
+        color: #fff;
+      }
+       
+      .item8-1{
+        background: #009933;
+        flex-grow: 3;
+      }
+       
+      .item8-2{
+        background: #0066FF;
+        flex-grow: 1;
+      }
+       
+      .item8-3{
+        background: #CC6666;
+        flex-grow: 1;
+      }
+       
+      .item8-4{
+        background: #CC66FF;
+        flex-grow: 1;
+      }
+       
+      .item8-5{
+        background: #FF33CC;
+        flex-grow: 1;
+      }
+
+
+      /* flex-shrink=親要素に対しての個要素の割合 ※余白がない場合(flex-shrink: 番号;) */
+
+      .flexcontainer9{
+        display: flex;
+        margin-bottom: 60px;
+      }
+       
+      .flexitem9{
+        width: 30%;
+        height: 100px;
+        text-align: center;
+        font-size: 30px;
+        color: #fff;
+      }
+       
+      .item9-1{
+        background: #009933;
+        flex-shrink: 3;
+      }
+       
+      .item9-2{
+        background: #0066FF;
+        flex-shrink: 2;
+      }
+       
+      .item9-3{
+        background: #CC6666;
+        flex-shrink: 1;
+      }
+       
+      .item9-4{
+        background: #CC66FF;
+        flex-shrink: 1;
+      }
+       
+      .item9-5{
+        background: #FF33CC;
+        flex-shrink: 1;
+      }
+
+
+      /* flex-basis=子要素の横幅を指定(flex-basis: サイズ;) */
+
+      .flexcontainer10{
+        display: flex;
+        margin-bottom: 60px;
+      }
+       
+      .flexitem10{
+        height: 100px;
+        text-align: center;
+        font-size: 30px;
+        color: #fff;
+      }
+       
+      .item10-1{
+        background: #009933;
+        flex-basis: 40%;
+      }
+       
+      .item10-2{
+        background: #0066FF;
+        flex-basis: 30%;
+      }
+       
+      .item10-3{
+        background: #CC6666;
+        flex-basis: 20%;
+      }
+       
+      .item10-4{
+        background: #CC66FF;
+        flex-basis: 5%;
+      }
+       
+      .item10-5{
+        background: #FF33CC;
+        flex-basis: 5%;
+      }
+
+      /* flexs=これまでの子要素への指定が一括で指定??(flex: 2 0 30%;) */
+
+      .flexcontainer11{
+        display: flex;
+      }
+       
+      .flexitem11{
+        height: 100px;
+        text-align: center;
+        font-size: 30px;
+        color: #fff;
+      }
+       
+      .item11-1{
+        background: #009933;
+        flex: 2 0 30%;
+      }
+
+      /* flex: flex-grow flex-shrink flex-basis; */
+       
+      .item11-2{
+        background: #0066FF;
+      }
+       
+      .item11-3{
+        background: #CC6666;
+      }
+       
+      .item11-4{
+        background: #CC66FF;
+      }
+       
+      .item11-5{
+        background: #FF33CC;
+      }
